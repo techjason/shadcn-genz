@@ -58,6 +58,7 @@ const config: Config = {
       },
       fontFamily: {
         serif: ["var(--font-instrument-serif)"],
+        crimson: ["var(--font-crimson-pro)"],
       },
     },
   },
