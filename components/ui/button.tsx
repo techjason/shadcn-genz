@@ -4,6 +4,9 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
+const duolingoCommon =
+  "font-nunito transition-all duration-150 hover:translate-y-[2px] hover:brightness-95 active:translate-y-[5px] active:brightness-90";
+
 const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
@@ -18,18 +21,12 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        duolingo1:
-          "bg-[#EF476F] font-nunito text-white shadow-[0_5px_0_0_#C92050] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[0_3px_0_0_#C92050] hover:brightness-95 active:translate-y-[5px] active:shadow-[0_0px_0_0_#C92050] active:brightness-90",
-        duolingo2:
-          "bg-[#29335C] font-nunito text-white shadow-[0_5px_0_0_#1E2440] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[0_3px_0_0_#1E2440] hover:brightness-95 active:translate-y-[5px] active:shadow-[0_0px_0_0_#1E2440] active:brightness-90",
-        duolingo3:
-          "bg-[#ffc145] font-nunito text-[#935c03] shadow-[0_5px_0_0_#ce8a13] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[0_3px_0_0_#ce8a13] hover:brightness-95 active:translate-y-[5px] active:shadow-[0_0px_0_0_#ce8a13] active:brightness-90",
-        duolingo4:
-          "bg-[#C7EDE4] font-nunito text-black shadow-[0_5px_0_0_#B3D5CD] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[0_3px_0_0_#B3D5CD] hover:brightness-95 active:translate-y-[5px] active:shadow-[0_0px_0_0_#B3D5CD] active:brightness-90",
-        duolingo5:
-          "bg-[#578bff] font-nunito text-[#f3f7ff] shadow-[0_5px_0_0_#1e57d6] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[0_3px_0_0_#1e57d6] hover:brightness-95 active:translate-y-[5px] active:shadow-[0_0px_0_0_#1e57d6] active:brightness-90",
-        duolingo6:
-          "bg-[#754AED] font-nunito text-[#EBE6FF] shadow-[0_5px_0_0_#4927C9] transition-all duration-150 hover:translate-y-[2px] hover:shadow-[0_3px_0_0_#4927C9] hover:brightness-95 active:translate-y-[5px] active:shadow-[0_0px_0_0_#4927C9] active:brightness-90",
+        duolingo1: `${duolingoCommon} bg-[#EF476F] text-white shadow-[0_5px_0_0_#C92050] hover:shadow-[0_3px_0_0_#C92050] active:shadow-[0_0px_0_0_#C92050]`,
+        duolingo2: `${duolingoCommon} bg-[#29335C] text-white shadow-[0_5px_0_0_#1E2440] hover:shadow-[0_3px_0_0_#1E2440] active:shadow-[0_0px_0_0_#1E2440]`,
+        duolingo3: `${duolingoCommon} bg-[#ffc145] text-[#935c03] shadow-[0_5px_0_0_#ce8a13] hover:shadow-[0_3px_0_0_#ce8a13] active:shadow-[0_0px_0_0_#ce8a13]`,
+        duolingo4: `${duolingoCommon} bg-[#C7EDE4] text-black shadow-[0_5px_0_0_#B3D5CD] hover:shadow-[0_3px_0_0_#B3D5CD] active:shadow-[0_0px_0_0_#B3D5CD]`,
+        duolingo5: `${duolingoCommon} bg-[#578bff] text-[#f3f7ff] shadow-[0_5px_0_0_#1e57d6] hover:shadow-[0_3px_0_0_#1e57d6] active:shadow-[0_0px_0_0_#1e57d6]`,
+        duolingo6: `${duolingoCommon} bg-[#754AED] text-[#EBE6FF] shadow-[0_5px_0_0_#4927C9] hover:shadow-[0_3px_0_0_#4927C9] active:shadow-[0_0px_0_0_#4927C9]`,
       },
       size: {
         default: "h-10 px-4 py-2",
