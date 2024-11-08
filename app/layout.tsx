@@ -3,6 +3,14 @@ import localFont from "next/font/local";
 import { Instrument_Serif, Crimson_Pro } from "next/font/google";
 import "./globals.css";
 
+import {
+  EightiesComeBack,
+  EightiesComeBackCondensed,
+  EightiesComeBackExtraCondensed,
+  EightiesComeBackSemiCondensed,
+  EightiesComeBackUltraCondensed,
+} from "./eighties-font";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -39,7 +47,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} ${crimsonPro.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} ${crimsonPro.variable} ${EightiesComeBack.variable} 
+        ${EightiesComeBackCondensed.variable}
+        ${EightiesComeBackSemiCondensed.variable}
+        ${EightiesComeBackExtraCondensed.variable}
+        ${EightiesComeBackUltraCondensed.variable} antialiased`}
       >
         {children}
       </body>

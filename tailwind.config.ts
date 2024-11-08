@@ -59,6 +59,11 @@ const config: Config = {
       fontFamily: {
         serif: ["var(--font-instrument-serif)"],
         crimson: ["var(--font-crimson-pro)"],
+        eighties: ["var(--font-eighties)"],
+        "eighties-condensed": ["var(--font-eighties-condensed)"],
+        "eighties-semi-condensed": ["var(--font-eighties-semi-condensed)"],
+        "eighties-extra-condensed": ["var(--font-eighties-extra-condensed)"],
+        "eighties-ultra-condensed": ["var(--font-eighties-ultra-condensed)"],
       },
     },
   },
