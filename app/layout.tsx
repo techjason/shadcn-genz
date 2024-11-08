@@ -13,6 +13,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: ["400"],
