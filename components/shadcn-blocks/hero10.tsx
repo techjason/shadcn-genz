@@ -2,7 +2,7 @@ import { ArrowDownRight } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-
+import Link from "next/link";
 const Hero10 = () => {
   return (
     <section className="relative overflow-hidden py-16">
@@ -428,10 +428,12 @@ const Hero10 = () => {
             </defs>
           </svg>
           <div className="z-10 mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
-            <Badge variant="outline">
-              New Release
-              <ArrowDownRight className="ml-2 size-4" />
-            </Badge>
+            <Link href="https://memo.cards">
+              <Badge variant="outline">
+                Powering memo.cards
+                <ArrowDownRight className="ml-2 size-4" />
+              </Badge>
+            </Link>
             <div>
               <h1 className="mb-2 text-pretty text-4xl font-bold lg:text-7xl font-serif">
                 ShadCN Components Styled For Consumer/GenZ Apps
